@@ -1,0 +1,66 @@
+
+
+Title:- Library Management System
+
+
+Collections
+
+  Books  -- categorized by subject wise
+  Book_Authorship  -- which book assigned to with
+  User  ---teacher staff students
+  Publisher  -- 
+  Borrower --
+
+  
+   add/remove/update  book
+    reservebook
+    checkout book
+    renewBook
+    returnBook
+
+Books 
+    bookId
+    isbn
+    title
+    price
+    author
+
+User
+   userId
+   userName
+   age
+   class
+   address
+   dob
+
+Borrower
+   userId
+   bookId
+   authId
+
+Publisher
+   publisherName
+   publisherId
+   publisherAddress
+   city
+
+
+Book_Authorship
+  bookId
+  publisherId
+  userId
+
+Category
+   categoryId
+   categoryName
+
+
+ 
+
+
+create book 
+  db.book.insertOne({bookId:'2221', ISBN:'comp2211', title:'Mongo Db', price: 20, author: 'Naveen', publisherId: 'pub123' })
+
+
+
+

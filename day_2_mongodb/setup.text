@@ -1,0 +1,13 @@
+
+Installation on mac
+
+Install HomeBrew for mac package installer
+
+1. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. brew tab mongodb/brew
+3. brew install mongodb-community
+4. sudo mkdir -p System/Volumes/Data/data/db        To store batabase file which mongod use
+5. sudo chown -R `id -un` System/Volumes/Data/data/db     
+6. sudo mongod --dbpath System/Volumes/Data/data/db     To provide database path which mongo use and run server
+7. alias mongod="sudo mongod --dbpath System/Volumes/Data/data/db"  To alias for long command to make it short as mongod
